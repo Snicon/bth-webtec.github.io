@@ -82,17 +82,17 @@ Gå till terminalen och stå i rooten av ditt katalogen där ditt git-repo ligge
 $ pwd
 /home/mos/dbwebb-kurser/webtec-mosstud
 
-$ npx eslint
+$ npm run lint
 ```
 
-Om du inte får någon utskrift från `npx eslint` så är allt okey. Om lintern upptäcker något fel så försöker du gå in och rättar det. Lita på att lintern har rätt. Kan du inte rätta det så ber du om hjälp.
+Om du inte får någon utskrift från `npm run lint` så är allt okey. Om lintern upptäcker något fel så försöker du gå in och rättar det. Lita på att lintern har rätt. Kan du inte rätta det så ber du om hjälp.
 
 Om du vill veta mer om [eslint och dess regler så finns det dokumentation om varje regel](https://eslint.org/docs/latest/rules/).
 
 Som tur är finns det också ett sätt att låta eslint försöka rätta felet, ibland går det bra. Nästa gång detta händer kan du prova att låta eslint rätta felen med följande kommando.
 
 ```bash title="Eslint kan försöka rätta felen på egen hand."
-npx eslint --fix
+npm run lint:fix
 ```
 
 När du gör din inlämning så får det inte finnas några fel när lintern kör.
