@@ -16,7 +16,7 @@ Nu har vi sett hur vi kan bygga en responsiv webbplats där rader innehåller ko
 
 ## En ny mall med main och aside
 
-Vi börjar med att skapa en ny HTML-mall som har main och aside. Vi skapar en ny fil `public/responsive-3col.html` med följande innehåll.
+Vi börjar med att skapa en ny HTML-mall som har main och aside. Vi skapar en ny fil `public/responsive-3cols.html` med följande innehåll.
 
 ```html title="Mall för sida med 3 kolumner med main och aside"
 <!DOCTYPE html>
@@ -64,6 +64,12 @@ Vi börjar med att skapa en ny HTML-mall som har main och aside. Vi skapar en ny
 Skillnaden i denna koden är att vi använder elementen `main` och `aside` för att markera sidans huvudinnehåll och sidoinnehåll. Vi har också lagt till klasserna `left` och `right` på asides för att kunna styla dem olika.
 
 För att exemplet skall fungera så har vi wrappat alla rader i `section` med klassen `row` och samtliga rader är wrappade i en container med klassen `container`. Detta ger oss möjlighet att styla hela innehållet med en maxbredd och centrera det på sidan.
+
+:::note
+Denna demosida visar fyra fristående layoutexempel (1 kolumn, aside-left + main, main + aside-right, samt 3 kolumner) sida vid sida, därför har vi fyra `<main>`-element på samma sida. Det är enbart för att du skall kunna jämföra layouterna här i övningen.
+
+På en verklig sida skall det bara finnas **ett** `<main>`-element — annars validerar inte sidan i W3C HTML validator. När du bygger dina egna sidor (`me.html`, `report.html`, `about.html`) väljer du en av dessa layouter åt gången och har bara den enda `main`-sektionen kvar.
+:::
 
 
 

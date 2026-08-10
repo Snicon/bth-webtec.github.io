@@ -17,3 +17,9 @@ Innehållsgranskning 2026-08-10. Kvarstående punkter, tas en i taget.
 Åtgärdat: stavfel "avvaktivera" → "avaktivera" i hamburgare.mdx (2026-08-10).
 
 Åtgärdat: tom HTML-kommentar-rest (`<!-- TODO * -->`) borttagen ur `lab_02.md` (2026-08-10).
+
+Åtgärdat: filnamnsinkonsekvens — `public/responsive-3col.html` bytt till `responsive-3cols.html` i 3-kolumner.mdx för att matcha `responsive-3cols.css` och resten av artiklarna (2026-08-10).
+
+Åtgärdat: felaktig selektor-beskrivning i media-query.mdx — `.row .cols-3` (descendant, med mellanslag) bytt till `.row.cols-3` (sammansatt, utan mellanslag) i brödtexten för att matcha kodexemplen (2026-08-10).
+
+Åtgärdat: förtydligat i 3-kolumner.mdx (med en note-ruta) att de fyra `<main>`-elementen i demot är fristående layoutexempel sida vid sida, och att en verklig sida bara ska ha ett `<main>` (2026-08-10).
