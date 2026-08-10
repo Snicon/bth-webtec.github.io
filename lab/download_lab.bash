@@ -3,15 +3,7 @@
 #
 # Download the lab files to the current directory, execute like this.
 #
-# Create an empty local directory for the lab
-#  mkdir lab_01
-#  cd lab_01
-#
-# Locally:
-#  bash download_lab.bash
-#
-# Using remote:
-#  bash <(curl -Ls https://raw.githubusercontent.com/btth-webtec/website/refs/heads/main/src/content/docs/laromaterial/lab/download_lab.bash)
+# bash <(curl -Ls https://raw.githubusercontent.com/bth-webtec/bth-webtec.github.io/refs/heads/main/lab/download_lab.bash)
 #
 
 # Read the lab from the student

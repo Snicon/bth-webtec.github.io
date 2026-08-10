@@ -43,3 +43,13 @@ Synkat till `public/me.html` och `public/css/header.css` i webtec-mos.
 Genomgång av nästa del: `js-builtin-types.mdx` (2026-08-10).
 
 Åtgärdat: 9 av 10 MDN-länkar i `js-builtin-types.mdx` använde en föråldrad URL-form (saknade `/Web/`-segmentet och/eller använde lokalen `/en/` istället för `/en-US/`), t.ex. `developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math`. Länkarna fungerade via MDN:s redirect (verifierat med curl, alla gav 200) men var inkonsekventa med resten av dokumentationen. Uppdaterade samtliga till kanonisk form `developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/...`. Ingen `public/`-fil att synka — artikeln är en fristående JS-referens utan HTML/CSS/JS-steg för webtec-mos.
+
+---
+
+Genomgång av nästa del: `lab_01.md` (2026-08-10).
+
+`lab_01.md` självt var korrekt — länken till `/studieguide/lab/` och `lab/download_lab.bash` fungerar båda. Två fynd i det delade skriptet `lab/download_lab.bash` (påverkar även lab_02–04, samma fil), åtgärdade av användaren och verifierade (bash -n OK, ny URL ger status 200):
+- Stavfel `btth-webtec` (dubbel-t) och gammal sökväg (`website/.../laromaterial/lab/download_lab.bash`) i skriptets usage-kommentar, ersatt med korrekt `bth-webtec/bth-webtec.github.io/refs/heads/main/lab/download_lab.bash`.
+- Missvisande "Locally"-instruktion (`mkdir lab_01 && cd lab_01 && bash download_lab.bash`) som skulle ge dubbelnästlade kataloger (`lab_01/lab/lab_01/...`) eftersom skriptet alltid skapar `lab/$LAB` relativt cwd. Blocket borttaget, endast den korrekta fjärranvändningen kvar.
+
+Ej åtgärdat (avsiktligt lämnat): HTML-kommentaren med en riktig TODO-lista i `lab_01.md` (rader 13–20, planerade strängövningar `replaceSpaces`/`capitalizeWords`/`countCharacter`) — till skillnad från den tomma TODO-resten som togs bort i `lab_02.md` innehåller den här faktiska anteckningar och lämnas orörd.
