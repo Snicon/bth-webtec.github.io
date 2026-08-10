@@ -37,3 +37,9 @@ Synkat till `public/me.html` och `public/css/header.css` i webtec-mos.
 Åtgärdat: vitt fält under footern på höga viewports i `footer-i-tre-delar.mdx` — varken `body` eller `html` hade någon `background-color`, så webbläsarens vita standardbakgrund syntes under `.sitefooter` när sidans innehåll var kortare än fönstret. Lade till `body { background-color: #2e2e2e; }` (matchar footerns färg) i grundstruktur-blocket. Synkat till `public/css/footer.css` i webtec-mos (2026-08-10).
 
 Åtgärdat: kvarvarande vit 8px-ram runt hela sidan i `header-med-logo-navbar.mdx` — UA-standardens `margin: 8px` på `body` visade `html`-elementets (obakgrundssatta) yta genom marginalen, trots den nya mörka `body`-bakgrunden. Lade till `body { margin: 0; }` i normaliseringsblocket ("Enkel normalisering av en stylesheet"). Synkat till `public/css/normalize.css` i webtec-mos (2026-08-10).
+
+---
+
+Genomgång av nästa del: `js-builtin-types.mdx` (2026-08-10).
+
+Åtgärdat: 9 av 10 MDN-länkar i `js-builtin-types.mdx` använde en föråldrad URL-form (saknade `/Web/`-segmentet och/eller använde lokalen `/en/` istället för `/en-US/`), t.ex. `developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math`. Länkarna fungerade via MDN:s redirect (verifierat med curl, alla gav 200) men var inkonsekventa med resten av dokumentationen. Uppdaterade samtliga till kanonisk form `developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/...`. Ingen `public/`-fil att synka — artikeln är en fristående JS-referens utan HTML/CSS/JS-steg för webtec-mos.

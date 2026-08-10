@@ -24,11 +24,11 @@ Math.sqrt(-1)       // Fails and returns NaN, Not a Number, special case.
 parseInt('no way')  // Fails and returns NaN.
 ```
 
-När en matematisk funktion eller en parsning av ett number misslyckas så returneras värdet `NaN` som betyder "Not a number". [Läs mer om Nan](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/NaN). Om man har en större beräkning och en del ger Nan så kommer hela uttrycket att bli Nan. Det kan göra det lite svårt att felsöka en komplex beräkning som ger Nan, men dela upp beräkningen i delar så blir det enklare att felsöka.
+När en matematisk funktion eller en parsning av ett number misslyckas så returneras värdet `NaN` som betyder "Not a number". [Läs mer om Nan](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN). Om man har en större beräkning och en del ger Nan så kommer hela uttrycket att bli Nan. Det kan göra det lite svårt att felsöka en komplex beräkning som ger Nan, men dela upp beräkningen i delar så blir det enklare att felsöka.
 
-När vi jobbar med nummer så stöds de vanliga [aritmetiska operatorer](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators) som vi känner igen från andra programmeringsspråk.
+När vi jobbar med nummer så stöds de vanliga [aritmetiska operatorer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators) som vi känner igen från andra programmeringsspråk.
 
-Det finns en samling matematiska funktioner som är samlade i objektet [`Math`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math). Med dessa kan du utföra vanliga matematiska beräkningar.
+Det finns en samling matematiska funktioner som är samlade i objektet [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math). Med dessa kan du utföra vanliga matematiska beräkningar.
 
 ```js
 Math.PI           // Constant value for PI
@@ -36,7 +36,7 @@ Math.random()     // Return a random number
 Math.tan(2)       // Return tangent of 2
 ```
 
-Det är objektet [`Number`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number) som används när du jobbar med nummer. Konvertering av värden sker automatiskt mellan literal och objekt, ofta spelar det ingen roll men det är bra att veta om man vill ha lite extra koll. Kika på objektet Number för att se vilka standardfunktioner som det erbjuder.
+Det är objektet [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) som används när du jobbar med nummer. Konvertering av värden sker automatiskt mellan literal och objekt, ofta spelar det ingen roll men det är bra att veta om man vill ha lite extra koll. Kika på objektet Number för att se vilka standardfunktioner som det erbjuder.
 
 Var uppmärksam på Nan och Infinity i dina beräkningar. Se följande exempel.
 
@@ -66,7 +66,7 @@ Strängar omsluts med enkelfnutt `'`, dubbelfnutt `"` eller backticks `` ` `` sp
 
 Strängkonkatenering sker med operatorn `+` eller `+=`.
 
-Det finns en samling med sträng-funktioner som är samlade i objektet [`String`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String).
+Det finns en samling med sträng-funktioner som är samlade i objektet [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
 
 
 
@@ -97,7 +97,7 @@ Försök undvika att värden av olika typer beräknas på detta atuomatiska sät
 
 ### Kontrollerad typkonvertering
 
-Vill du ha mer kontroll på hur konvertering sker kan du använda funktionerna [`parseInt()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/parseInt) och [`parseFloat()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/parseFloat) för att konvertera strängar till nummer och [`toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toString) för att konvertera nummer till strängar.
+Vill du ha mer kontroll på hur konvertering sker kan du använda funktionerna [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) och [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) för att konvertera strängar till nummer och [`toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString) för att konvertera nummer till strängar.
 
 Notera att `toString` anropas som en metod på ett objekt, medan `parseInt` och `parseFloat` kan anropas som en funktion.
 
@@ -116,7 +116,7 @@ Vid sidan av alla objekt finns även en uppsättning av [globala funktioner](htt
 
 ## Boolska värden och `Boolean`
 
-Det finns ett objekt [`Boolean`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean) som automatiskt används vid typkonvertering av uttryck till `true` och `false`. Det kan vara bra att veta att det finns ett objekt i bakgrunden men normalt behöver man inte tänka på det utan kan använda `true` och `false` som vanliga literaler.
+Det finns ett objekt [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) som automatiskt används vid typkonvertering av uttryck till `true` och `false`. Det kan vara bra att veta att det finns ett objekt i bakgrunden men normalt behöver man inte tänka på det utan kan använda `true` och `false` som vanliga literaler.
 
 Det finns ingen anledning att explicit använda objektet `Boolean` över huvudtaget. Det räcker bra med literalerna `true` och `false`. Eller som det står i MDN manualen:
 
@@ -147,7 +147,7 @@ Att använda två `==` jämför värdet, att använda tre `===` innebär jämfö
 
 ## Datumhantering med objektet `Date`
 
-Med objektet [`Date`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date) får vi en mängd metoder för att jobba med datum och tid.
+Med objektet [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) får vi en mängd metoder för att jobba med datum och tid.
 
 ```javascript
 let today = new Date()
