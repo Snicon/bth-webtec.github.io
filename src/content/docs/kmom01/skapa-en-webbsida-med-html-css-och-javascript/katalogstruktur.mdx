@@ -59,8 +59,8 @@ Innan vi är helt klara så laddar vi hem ett par bilder som kan användas när 
 
 ```console title="Hämta hem bilder från nätet och spara lokalt"
 curl -so img/leaf.png https://dbwebb.se/img/theme/leaf_64x64.png
-curl -so img/me.png https://dbwebb.se/img/prata-med-ankan.png
-curl -so img/desktop.png https://dbwebb.se/img/mos-desktop-kaprifolen.jpg
+curl -so img/me.jpg https://dbwebb.se/image/prata-med-ankan.png?sa=jpg
+curl -so img/desktop.jpg https://dbwebb.se/image/mos-desktop-kaprifolen.jpg?w=1200&h=1200
 curl -so favicon.ico https://dbwebb.se/favicon.ico
 ```
 
@@ -74,13 +74,11 @@ När vi är klara så ser strukturen ut så här. Du kan själv kolla din egen k
     │   └── style.css
     ├── favicon.ico
     ├── img
-    │   ├── desktop.png
+    │   ├── desktop.jpg
     │   ├── leaf.png
-    │   └── me.png
+    │   └── me.jpg
     ├── js
     │   └── hello.js
-    ├── kmom01
-    │   └── me.html
     ├── me.html
     └── report.html
 ```

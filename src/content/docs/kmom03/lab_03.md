@@ -38,7 +38,7 @@ Så här laddar du ned labben med terminalen till ditt kursrepo.
 # Gå till roten av ditt kursrepo
 
 # Hämta en lab
-bash <(curl -Ls https://raw.githubusercontent.com/bth-webtec/refs/heads/main/lab/download_lab.bash)
+bash <(curl -Ls https://raw.githubusercontent.com/bth-webtec/bth-webtec.github.io/refs/heads/main/lab/download_lab.bash)
 ```
 
 **Ange siffran 3 för att hämta lab_03.**
