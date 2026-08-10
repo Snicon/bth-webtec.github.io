@@ -11,7 +11,7 @@ Från och med hösten 2026 finner du kursens webbplats på [bth-webtec.github.io
 
 ## Kursmaterial
 
-Hösten 2025 fanns webbplatsen på https://bth-webtec.github.io/website men det är från hösten 2026 ändrad till https://bth-webtec.github.io/. I repot där denna webbplats finns så finne en tagg `2025` som kan användas för att via docker köra igång den äldre webbplatsen.
+Hösten 2025 fanns webbplatsen på https://bth-webtec.github.io/website men det är från hösten 2026 ändrad till https://bth-webtec.github.io/. I repot där denna webbplats finns så finns en tagg `2025` som kan användas för att via docker köra igång den äldre webbplatsen.
 
 För tillfället från och med höstterminen 2022 fram till och med höstterminen 2024 så [finns kursmaterialet till webtec (v2) här](http://dbwebb.se/kurser/webtec-v2).
 
