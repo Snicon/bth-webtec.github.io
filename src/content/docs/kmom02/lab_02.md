@@ -10,13 +10,6 @@ sidebar:
 
 I denna laboration får du träna på kontrollstrukturerna if/else/if else och switch.
 
-<!-- [[_TOC_]] -->
-
-<!--
-TODO
-
-*
--->
 
 
 Förutsättning
