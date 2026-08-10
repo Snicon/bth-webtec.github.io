@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import starlight from '@astrojs/starlight';
 import starlightImageZoom from 'starlight-image-zoom'
 
@@ -7,6 +8,13 @@ import starlightImageZoom from 'starlight-image-zoom'
 export default defineConfig({
 	site: 'https://bth-webtec.github.io/',
 	base: '/',
+	markdown: {
+		// Astro 7 introducerade Sätteri som ny standardprocessor för markdown,
+		// men den kör inte remark/rehype-plugins som Starlight-tillägg
+		// (astro-expressive-code, starlight-image-zoom, astro-embed) registrerar
+		// på det gamla sättet. unified() ger tillbaka den klassiska pipelinen.
+		processor: unified(),
+	},
 	integrations: [
 		starlight({
 			plugins: [
