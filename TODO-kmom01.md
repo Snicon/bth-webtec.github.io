@@ -53,3 +53,7 @@ Genomgång av nästa del: `lab_01.md` (2026-08-10).
 - Missvisande "Locally"-instruktion (`mkdir lab_01 && cd lab_01 && bash download_lab.bash`) som skulle ge dubbelnästlade kataloger (`lab_01/lab/lab_01/...`) eftersom skriptet alltid skapar `lab/$LAB` relativt cwd. Blocket borttaget, endast den korrekta fjärranvändningen kvar.
 
 Ej åtgärdat (avsiktligt lämnat): HTML-kommentaren med en riktig TODO-lista i `lab_01.md` (rader 13–20, planerade strängövningar `replaceSpaces`/`capitalizeWords`/`countCharacter`) — till skillnad från den tomma TODO-resten som togs bort i `lab_02.md` innehåller den här faktiska anteckningar och lämnas orörd.
+
+---
+
+Åtgärdat: flytande bild kunde sticka ut nedanför artikelramen i `artikel-med-header-och-footer.mdx` — upptäckt av användaren i webtec-mos på sidan `about.html`, som (till skillnad från övningens exempel) inte har någon `.byline`-footer efter den flytande figuren. `.article` etablerade aldrig en block formatting context, så boxens höjd räknades bara utifrån innehåll i normalt flöde; på breda viewports blev paragraferna korta nog att den flytande `.figure.right`-bilden stack ut under artikelns kant. Den tidigare fixen `clear: both` på `.article .byline` (se tidigare post om floatande byline) löser bara fallet där en byline finns efteråt. Lade till `display: flow-root;` på `.article` samt en förklarande textrad efter figure-exemplet. Synkat till `public/css/article.css` i webtec-mos (2026-08-10).

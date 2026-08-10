@@ -107,6 +107,7 @@ Vi börjar med stilen till själva artikel-elementet.
   border-radius: 8px;          /* Rounded corners for a modern look */
   padding: 1.5rem;             /* Space around the content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  display: flow-root;          /* Establishes a new block formatting context so the box always contains floated children, like the image further down */
 }
 ```
 
@@ -211,6 +212,8 @@ Så här kan stylen för en figure se ut, där man stylar bild och bildtext samt
 ```
 
 Nu har bilden fått viss style och den flyter till höger i förhållande till texten.
+
+Lägg märke till att `.article` fick `display: flow-root;` när vi stylade den tidigare. Det gör att `.article` alltid omsluter flytande innehåll som denna bild, oavsett hur mycket text som finns kvar under bilden. Utan den egenskapen kan bilden sticka ut nedanför artikelns ram om du inte har en footer/byline som "clearar" flytet efteråt (så som i exemplet nedan).
 
 import article4 from '@assets/sewmhcoj/article4.png';
 
