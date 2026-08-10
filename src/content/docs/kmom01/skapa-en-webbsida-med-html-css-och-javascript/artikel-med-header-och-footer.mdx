@@ -61,7 +61,7 @@ För att göra det lite roligare så tänker jag fylla ut innehållet med mer te
         <footer class="byline">
 
           <figure class="figure left">
-            <img src="https://mikaelroos.se/img/mos-tjaro.webp" alt="Bild på mig" width="100px">
+            <img src="https://mikaelroos.se/img/mos-tjaro.webp" alt="Bild på mig" width="100">
             <figcaption>Mikael Roos</figcaption>
           </figure>
 
@@ -232,6 +232,7 @@ Den footer som finns till artikeln innehåller en "byline" som ger information o
  * Styling the footer section.
  */
 .article .byline {
+  clear: both;                  /* Clears the floated figure above so the byline starts below it */
   border-top: 2px solid #ccc;   /* Divider line for separation */
   padding-top: 1rem;            /* Space above the footer content */
   margin-top: 1rem;             /* Space below the footer content */
