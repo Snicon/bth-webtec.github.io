@@ -70,6 +70,10 @@ Sidopanelens struktur konfigureras i `astro.config.mjs`. Kmom-sektioner använde
 - **Mikael Roos (mos)** – Examinator, kursansvarig, lärare (mos@bth.se)
 - **Kenneth Lewenhagen (klw)** – Examinator, lärare (klw@bth.se)
 
+## QA-arbetsflöde för innehållsgranskning
+
+Vid genomläsning/granskning av ett kmom loggas fynd i en `TODO-<kmom>.md`-fil i repo-roten (t.ex. `TODO-kmom01.md`) – **inte** under `src/content/docs/`, eftersom `docsSchema()` (se `src/content.config.ts`) kräver `title`-frontmatter på alla filer där. Punkter fixas en i taget och verifieras mot filens faktiska innehåll innan de stängs med en "Åtgärdat: ..."-logg-rad. Repo-övergripande punkter som inte hör till ett specifikt kmom läggs i en generell `TODO.md` i repo-roten istället.
+
 ## Viktigt att tänka på
 
 - Innehållet är riktat till **nybörjare** (första årets studenter).
