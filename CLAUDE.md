@@ -77,6 +77,7 @@ Vid genomläsning/granskning av ett kmom loggas fynd i en `TODO-<kmom>.md`-fil i
 ## Viktigt att tänka på
 
 - Innehållet är riktat till **nybörjare** (första årets studenter).
+- Kommandon som nämns i uppgifts-/övningstext och som körs i studentens eget kursrepo (`webtec-mos` m.fl.) ska alltid skrivas som `npm run <script>` (t.ex. `npm run lint`, `npm run server`), aldrig som bar `npx <tool>` — annars driver texten isär från de faktiska scripten i studentmallens `package.json`, vilket hänt tidigare (kmom01, 2026-08-10).
 - Nytt innehåll ska vara konsistent med befintlig ton och struktur.
 - Filer är `.md` eller `.mdx`; MDX används när Astro-komponenter behövs.
 - Sidopanelen uppdateras automatiskt via `autogenerate` i `astro.config.mjs`; manuella poster finns för `lab/`.
