@@ -5,7 +5,6 @@ sidebar:
 ---
 
 import Figure from '@components/CustomFigure.astro';
-// import draw from '@assets/kmom06/draw.png';
 
 När vi hämtar en bild från en extern webbplats behöver vi arbeta lite med objektet för att det ska fungera. Vi får tillbaka en *blob* (Binary Large Object) som inte innehåller bilden utan bland annat en URL till bilden. Vi kan såklart använda bildens URL redan från start men då har vi inte möjlighet att antingen manipulera den eller utnyttja laddningstiden. Har vi till exempel en bild som är väldigt stor kan vi medan den laddar sätta en temporär bild, text eller animering som meddelar att den håller på att ladda. Med "blobben" kan vi också enkelt bygga funktionalitet som laddar ned bilden, laddar upp den på en server etc. Vi ska dock bara använda den.
 
@@ -25,7 +24,7 @@ Vi kikar på ett fullt exempel där vi laddar in en bild via fetch och sätter d
 document.body.innerHTML = "<h1>Please wait...</h1>" // Ett meddelande som visas under tiden
 let temp = await fetch(`https://raw.githubusercontent.com/bth-webtec/teacher/refs/heads/main/kmom06/backgrounds/1.jpg`) // Hämta bilddatan
 let blob = await temp.blob() // Skapa en blob
-backgroundImage = URL.createObjectURL(blob) // Hämta en användbar URL från blob
+let backgroundImage = URL.createObjectURL(blob) // Hämta en användbar URL från blob
 
 document.body.style.backgroundImage = `url(${backgroundImage})` // Sätt bilden som bakgrund
 document.body.classList.add("background") // Lägg till css klassen
