@@ -31,3 +31,5 @@ Innehållsgranskning 2026-08-10. Kvarstående punkter, tas en i taget.
 Åtgärdat: krav-listan i responsiv.md (uppgiftstexten för kmom02) hade `npm run check kmom01` kvar, kopierat från kmom01:s uppgiftstext (bygg-webbplats.md) utan att uppdateras — ändrat till `npm run check kmom02` (2026-08-11).
 
 Åtgärdat: dubblerat ord "som som" i mall.mdx, i både HTML- och CSS-avsnittets instruktionstext ("spara den som som filnamnet/filnamne") — ändrat till "spara den som filnamnet" på båda ställena, och rättade även "filnamne" till "filnamnet" i CSS-avsnittet för konsekvens med HTML-avsnittet (2026-08-11).
+
+Åtgärdat: stavfel "detvtools" → "devtools" i flexbox-wrap.mdx (2026-08-11).
