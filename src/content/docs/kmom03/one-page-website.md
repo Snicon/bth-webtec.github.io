@@ -99,9 +99,11 @@ Utför följande krav.
 
 1. Dina webbsidor skall validera i W3C CSS validator (när det är rimligt).
 
-1. Din webbplats skall passera `npx eslint`.
+1. Din webbplats skall passera `npm run lint`.
 
-1. Din webbplats skall gå att starta via `npx http-server`.
+1. Din webbplats skall gå att starta via `npm run server`.
+
+1. Ditt repo skall passera `npm run check kmom03`.
 
 1. När du är klar så taggar du ditt repo och pushar till GitHub.
 

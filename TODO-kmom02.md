@@ -23,3 +23,9 @@ Innehållsgranskning 2026-08-10. Kvarstående punkter, tas en i taget.
 Åtgärdat: felaktig selektor-beskrivning i media-query.mdx — `.row .cols-3` (descendant, med mellanslag) bytt till `.row.cols-3` (sammansatt, utan mellanslag) i brödtexten för att matcha kodexemplen (2026-08-10).
 
 Åtgärdat: förtydligat i 3-kolumner.mdx (med en note-ruta) att de fyra `<main>`-elementen i demot är fristående layoutexempel sida vid sida, och att en verklig sida bara ska ha ett `<main>` (2026-08-10).
+
+Åtgärdat: stavfel "webbpaltsn" → "webbplatsen" i kmom02/index.mdx (2026-08-11).
+
+Åtgärdat: duplicerad mening med två stavfel ("första" → "förstå", "amöjligheter" → "möjligheter") i kmom02/index.mdx och bygg-en-responsiv-webbplats/avslutningsvis.mdx (2026-08-11).
+
+Åtgärdat: krav-listan i responsiv.md (uppgiftstexten för kmom02) hade `npm run check kmom01` kvar, kopierat från kmom01:s uppgiftstext (bygg-webbplats.md) utan att uppdateras — ändrat till `npm run check kmom02` (2026-08-11).
