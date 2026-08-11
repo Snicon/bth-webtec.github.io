@@ -10,15 +10,6 @@ sidebar:
 
 I denna laboration får du träna på strukturen array i JavaScript och du får använda inbyggda metoder för att hantera dem.
 
-<!-- [[_TOC_]] -->
-
-<!--
-TODO
-
-*
--->
-
-
 Förutsättning
 ---------------------------
 

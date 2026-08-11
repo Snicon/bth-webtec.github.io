@@ -4,7 +4,7 @@ sidebar:
     order: 0005
 ---
 
-Arrayer är en datastruktur som vi kännr igen från andra programmeringsspråk. Från Python känner vi till den som "lista" och från PHP som "array". Vi kan med JavaScripts arrayer lagra i stort sett precis vad vi vill däri, vilket gör dem till en central del i språket. 
+Arrayer är en datastruktur som vi känner igen från andra programmeringsspråk. Från Python känner vi till den som "lista" och från PHP som "array". Vi kan med JavaScripts arrayer lagra i stort sett precis vad vi vill däri, vilket gör dem till en central del i språket. 
 
 
 
@@ -31,7 +31,7 @@ En array är indexerad från 0, vilket betyder att det vi har på första platse
 
 ```js
 let myArray3 = [42, "stormtrooper", "Pavarotti"]
-console.log(myarray[1]) // stormtrooper
+console.log(myArray3[1]) // stormtrooper
 ```
 
 Vi kan då blanda in till exempel forloopar som hanterar arrayer smidigt:
@@ -39,8 +39,8 @@ Vi kan då blanda in till exempel forloopar som hanterar arrayer smidigt:
 ```js
 let myArray3 = [42, "stormtrooper", "Pavarotti"]
 
-for (let i = 0; i < myArray2.length; i++) {
-  console.log(myArray[i])
+for (let i = 0; i < myArray3.length; i++) {
+  console.log(myArray3[i])
 }
 ```
 
@@ -61,9 +61,9 @@ for (const item of myArray3) {
 
 ### Några inbyggda metoder (funktioner)
 
-En array är av instansen Array och har en hel uppsätning inbyggda metoder, tex `Array.length` som vi såg ovan. Vi tittar på några till.
+En array är av instansen Array och har en hel uppsättning inbyggda metoder, tex `Array.length` som vi såg ovan. Vi tittar på några till.
 
-konkatinera arrayer:
+Konkatenera arrayer:
 ```js
 let arr1 = [1, 2, 3]
 let arr2 = [4, 5, 6]
@@ -79,7 +79,7 @@ let arr1 = [1, 2, 3]
 let lastValue = arr1.pop() // returns last value
 
 console.log(lastValue) // 3
-console.log(arr1) [ 1, 2 ]
+console.log(arr1) // [ 1, 2 ]
 
 let firstValue = arr1.shift() // returns first value
 

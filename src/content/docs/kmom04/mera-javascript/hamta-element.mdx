@@ -33,9 +33,9 @@ Läs mer om [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Do
 
 
 
-### queryselector
+### querySelector
 
-Ett annat sätt att hämta enstaka element är via `document.queryselector(selector)` där `selector` kan vara vilken css-selector som helst. Vi kommer alltid få tillbaka det första elementet som matchar eller `null` om inget hittas. Vi utgår från följande html kod:
+Ett annat sätt att hämta enstaka element är via `document.querySelector(selector)` där `selector` kan vara vilken css-selector som helst. Vi kommer alltid få tillbaka det första elementet som matchar eller `null` om inget hittas. Vi utgår från följande html kod:
 
 ```html title="sandbox, html"
 <div id="content" class="content">
@@ -46,7 +46,7 @@ Med tanke på att querySelector inte vet hur vi vill hämta ett element behöver
 
 ```js title="js, querySelector()"
 const myContentById = document.querySelector('#content')
-const myContentByClassName = document.querySelector('.myClass')
+const myContentByClassName = document.querySelector('.content')
 ```
 
 Värt att notera är att även om vi får ha oändligt många element med samma klassnamn är det **det första som hittas** som kommer returneras.
@@ -71,7 +71,7 @@ Om vi hämtar element via klassnamn får vi alla element som har det efterfråga
 Vi hämtar dem via klassnamnet och når dem via dess index på följande sätt:
 
 ```js title="js, getElementsByClassName()"
-const allDivs = document.getElementsByClassName('myClass')
+const allDivs = document.getElementsByClassName('content')
 console.log(allDivs[0].innerHTML) // Lite innehåll i första div:en
 console.log(allDivs[1].innerHTML) // Lite innehåll i andra div:en
 ```
@@ -84,7 +84,7 @@ Läs mer om [getElementsByClassName](https://developer.mozilla.org/en-US/docs/We
 
 ### querySelectorAll
 
-Som ett alternativ till att hämta element med klassnamn kan vi använda och `querySelectorAll()`. Där returneras en statisk nodelista där alla element med den valda *css selectorn* finns. Om vi tar ovan exempel igen men hämtar med querySelectorAll istället behöver vi bara ändra raden som hämtar elementen: `let allDivs = document.querySelectorAll('.myClass')`.` 
+Som ett alternativ till att hämta element med klassnamn kan vi använda oss av `querySelectorAll()`. Där returneras en statisk nodelista där alla element med den valda *css selectorn* finns. Om vi tar ovan exempel igen men hämtar med querySelectorAll istället behöver vi bara ändra raden som hämtar elementen: `let allDivs = document.querySelectorAll('.content')`.
 
 Läs mer om [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll).
 
