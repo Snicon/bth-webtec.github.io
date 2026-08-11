@@ -109,7 +109,7 @@ Utför följande krav.
 
 1. Din webbplats skall vara tillgänglig via en privat länk på GitHub Pages.
 
-1. När allt är klart och fungerar så gör du en pullrequest (PR) mot branchen `bth/submit/kmom03`. [Läs om hur du gör en PR för kmom03](/laromaterial/instruktion/gor-en-pr-for-kmom03)".
+1. När allt är klart och fungerar så gör du en pullrequest (PR) mot branchen `bth/submit/kmom03`. [Läs om hur du gör en PR](/studieguide/gor-en-pr/).
 
 
 

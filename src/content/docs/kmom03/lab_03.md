@@ -10,15 +10,6 @@ sidebar:
 
 I denna laboration får du träna på konceptet loop i JavaScript och du får använda for-loop och while-loop.
 
-<!-- [[_TOC_]] -->
-
-<!--
-TODO
-
-*
--->
-
-
 Förutsättning
 ---------------------------
 

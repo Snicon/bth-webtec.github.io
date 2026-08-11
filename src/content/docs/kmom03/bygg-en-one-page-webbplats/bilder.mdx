@@ -64,7 +64,7 @@ Lägg till följande till din webbsida, inuti din wrapper för sidans huvudsakli
 
 ```diff lang="html" title="HTML-struktur för en rad med en kolumn."
 <div class="wrapper">
--  <h1>Här skall vi nu fylla på med innehåll!</p>
+-  <h1>Här skall vi nu fylla på med innehåll!</h1>
 
 +  <section class="row cols1 color1">
 +    <div class="col background">
@@ -108,7 +108,7 @@ Nu ser du att det finns en massa klasser på rad och kolumn som ger oss en style
 }
 ```
 
-Studera CSS-koden så kan du se att vi tänker jobba med rader som bas-layout och inuti en rad finns det 1, 2 eller 3 kolumner som kan ha innehåll. Varje rad kan ha en bakgrundsfärg så kan vi skifta mllan ljusa och mörka bakgrundsfärger när vi bygger upp sidan.
+Studera CSS-koden så kan du se att vi tänker jobba med rader som bas-layout och inuti en rad finns det 1, 2 eller 3 kolumner som kan ha innehåll. Varje rad kan ha en bakgrundsfärg så kan vi skifta mellan ljusa och mörka bakgrundsfärger när vi bygger upp sidan.
 
 I detta fallet handlar det om att lägga till en bakgrundsbild. Den kan vi placera rakt in i kolumnen. Vi behöver ingen extra div för den.
 
@@ -125,7 +125,7 @@ Här är CSS som placerar en bakgrundsbild i kolumnen.
 
 Här är en förklaring i text om vad CSS-konstruktionen gör.
 
-> CSS-klassen `.background` används för att skapa en sektion med en bakgrundsbild som täcker hela ytan. Regeln `min-height: 20rem;` ser till att sektionen alltid är minst 20 rem hög, även om det inte finns något innehåll i den. Med `background-image` sätts själva bilden, här hämtad från sökvägen .`./img/risbrodammen-oversikt.png` (relativt där stylesheeten finns). Egenskapen `background-size: cover;` gör att bilden skalas upp eller ner för att alltid täcka hela ytan, utan att ändra proportionerna. Slutligen ser `background-position: center;` till att bilden centreras så att den alltid visas snyggt i mitten, även om delar beskärs för att fylla ytan.
+> CSS-klassen `.background` används för att skapa en sektion med en bakgrundsbild som täcker hela ytan. Regeln `min-height: 20rem;` ser till att sektionen alltid är minst 20 rem hög, även om det inte finns något innehåll i den. Med `background-image` sätts själva bilden, här hämtad från sökvägen `./img/risbrodammen-oversikt.png` (relativt där stylesheeten finns). Egenskapen `background-size: cover;` gör att bilden skalas upp eller ner för att alltid täcka hela ytan, utan att ändra proportionerna. Slutligen ser `background-position: center;` till att bilden centreras så att den alltid visas snyggt i mitten, även om delar beskärs för att fylla ytan.
 
 Så här blev det för mig.
 
