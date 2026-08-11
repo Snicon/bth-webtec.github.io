@@ -33,3 +33,5 @@ Innehållsgranskning 2026-08-10. Kvarstående punkter, tas en i taget.
 Åtgärdat: dubblerat ord "som som" i mall.mdx, i både HTML- och CSS-avsnittets instruktionstext ("spara den som som filnamnet/filnamne") — ändrat till "spara den som filnamnet" på båda ställena, och rättade även "filnamne" till "filnamnet" i CSS-avsnittet för konsekvens med HTML-avsnittet (2026-08-11).
 
 Åtgärdat: stavfel "detvtools" → "devtools" i flexbox-wrap.mdx (2026-08-11).
+
+Åtgärdat: stavfel "resultetet" → "resultatet" i kolumner-brytpunkter.mdx (2026-08-11).
