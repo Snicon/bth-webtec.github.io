@@ -6,7 +6,7 @@ sidebar:
 
 import Figure from '@components/CustomFigure.astro';
 
-Ett `<select>` element används för att skapa en "rullgardingsmeny". Varje val i elementet är ett `<option>` element. Det är dess värde som används när man valt det. Man använder ofta ett select element i formulär som skickas till en server.
+Ett `<select>` element används för att skapa en "rullgardinsmeny". Varje val i elementet är ett `<option>` element. Det är dess värde som används när man valt det. Man använder ofta ett select element i formulär som skickas till en server.
 
 ### HTML elementet &lt;select&gt;
 
@@ -21,9 +21,9 @@ Ett `<select>` element används för att skapa en "rullgardingsmeny". Varje val 
 
 * `<select>` = själva dropdown-menyn.
 * `<option>` = varje alternativ i listan.
-* disabled = man kan inte välja detta värde.
-* selected = detta värde är förvalt. 
-* value = det värde som skickas om man skickar formuläret (eller hämtar med JavaScript).
+* `disabled` = man kan inte välja detta värde.
+* `selected` = detta värde är förvalt. 
+* `value` = det värde som skickas om man skickar formuläret (eller hämtar med JavaScript).
 
 Texten mellan `<option>` ... `</option>` är det som syns för användaren.
 
@@ -31,7 +31,7 @@ Texten mellan `<option>` ... `</option>` är det som syns för användaren.
 
 ### Nå elementet med JavaScript
 
-När vi har valt en frut ovan kommer det värdet (value) hamna i select elementets `value`. Vi kikar på hur det kan se ut i JavaScript:
+När vi har valt en frukt ovan kommer det värdet (value) hamna i select elementets `value`. Vi kikar på hur det kan se ut i JavaScript:
 
 ```js title="Get chosen value"
 let fruitElement = document.getElementById("fruits") // Kommer innehålla select elementet.
