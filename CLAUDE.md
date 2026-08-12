@@ -22,6 +22,7 @@ npm run preview  # Förhandsgranska bygget
 ```
 astro.config.mjs          # Sidopanel, plugins, config
 lab/                      # Labbfiler (lab_01–lab_04, JavaScript)
+scripts/                  # Adminskript (t.ex. create-student-repo.bash)
 src/
   assets/                 # Bilder och statiska filer
   components/             # CustomFigure.astro, YouTube.astro
@@ -69,6 +70,12 @@ Sidopanelens struktur konfigureras i `astro.config.mjs`. Kmom-sektioner använde
 
 - **Mikael Roos (mos)** – Examinator, kursansvarig, lärare (mos@bth.se)
 - **Kenneth Lewenhagen (klw)** – Examinator, lärare (klw@bth.se)
+
+## Skapa studentrepo
+
+`scripts/create-student-repo.bash <akronym> [termin]` skapar ett nytt privat GitHub-repo åt en student utifrån mallen `webtec-abcd25`: skapar repot (med beskrivning och en topic för kursomgången, t.ex. `ht26`, default är innevarande år), klonar mallen, byter ut `abcd25` mot akronymen, och skapar submit-branches `bth/submit/kmom03`, `bth/submit/kmom06`, `bth/submit/kmom10`. Repon från en viss kursomgång kan senare sökas ut med `gh repo list bth-webtec --topic ht26`.
+
+Detta skript hanterar bara **skapandet** av repot. Löpande kursadministration (betygsättning av PR:ar mot Canvas, medlemshantering, uppslag av repo/pages-info) sker separat med verktyget `dbw.bash` i det fristående `owner`-repot – de två skripten anropar inte varandra.
 
 ## QA-arbetsflöde för innehållsgranskning
 
