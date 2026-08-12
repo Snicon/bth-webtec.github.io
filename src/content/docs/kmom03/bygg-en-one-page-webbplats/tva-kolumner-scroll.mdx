@@ -4,6 +4,7 @@ description: "Nu provar vi en tvåkolumnig layout så att den scrollas om det ä
 author: mos
 revision:
     "2025-09-14": "(A, mos) Första versionen."
+    "2026-08-12": "(A, mos) Rättade inkonsekvens: HTML-exemplet bytte color1/color3 mellan raden och kolumnerna jämfört med wrap-artikeln, trots att bara wrap/scroll skulle skilja."
 sidebar:
     order: 0080
 ---
@@ -26,28 +27,28 @@ Tanken är, som vi sagt, att ha en flexibel layout så att vi kan fokusera på a
 Till denna övningen använder jag samma HTML-kod som när vi gjorde wrap, med en liten skillnad.
 
 ```diff type="html" title="HTML-kod för två kolumner med 4 enheter, scrollbart"
--<section class="row cols2 color1 rounded wrap">
-+<section class="row cols2 color1 rounded scroll">
+-<section class="row cols2 color3 rounded wrap">
++<section class="row cols2 color3 rounded scroll">
 
-  <div class="col color3">
+  <div class="col color1">
     <div class="content">
       <h2>Gädda</h2>
     </div>
   </div>
 
-  <div class="col color3">
+  <div class="col color1">
     <div class="content">
       <h2>Aborre</h2>
     </div>
   </div>
 
-  <div class="col color3">
+  <div class="col color1">
     <div class="content">
       <h2>Sutare</h2>
     </div>
   </div>
 
-  <div class="col color3">
+  <div class="col color1">
     <div class="content">
       <h2>Mört</h2>
     </div>
