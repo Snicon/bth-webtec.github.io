@@ -35,7 +35,7 @@ fi
 echo "==> Creating repo ${NEW_REPO} from template ${TEMPLATE} (term: ${TERM})"
 
 # Create the new private repo on GitHub
-gh repo create "${NEW_REPO}" --private
+gh repo create "${NEW_REPO}" --private --description "My course repo for the webtec course (${TERM})."
 
 # Tag the repo with its course term so repos from a given round can be
 # found later, for updating or archiving.
