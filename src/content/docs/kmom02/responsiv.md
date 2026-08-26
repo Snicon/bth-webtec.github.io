@@ -7,13 +7,9 @@ sidebar:
 
 Denna uppgift görs som en del av kmom02 och den sätter kraven för den webbplats du skall bygga.
 
-
-
 ## Förutsättning
 
 Du har genomfört kmom01 och du har genomfört övningen "[Bygg en responsiv webbplats](../bygg-en-responsiv-webbplats)".
-
-
 
 ## Allmänt
 
@@ -21,15 +17,13 @@ Om du har utfört övningarna så har du gjort 80% av uppgiften.
 
 Övningen visar de delar av responsivitet som du behöver för att lösa uppgiften.
 
-
-
 ## Krav
 
 Utför följande krav.
 
 1. Fortsätt och bygg ut den webbplatsen du gjorde i kmom01. Din nya webbplats skall uppfylla alla krav som fanns i uppgiften i kmom01, om inget annat sägs nedan.
 
-1. Till denna uppgiften skall du lägga all din CSS-kod i filen `public/css/responsive-design.css` men du får gärna dela upp filen i små filer som du importerar. Försök återanvända den css-koden du byggde i kmom01, modifiera den gärna.
+1. Skapa filen `public/css/responsive-design.css` och placera CSS-kod som har med responsivitet att göra. Men, du har full frihet i hur du organiserar din CSS-kod. Dela gärna upp i små filer som du importerar. Återanvända den CSS-kod du byggde i kmom01, modifiera gärna.
 
 1. Till denna uppgiften skapar du en fil `public/js/responsive-design.js` där du placerar den JavaScript-kod som är relevant för uppgiften.
 
@@ -57,12 +51,10 @@ Utför följande krav.
 
 1. Din webbplats skall vara publicerad via GitHub pages.
 
-
-
 ## Övrigt
 
 Här finns övriga saker som är bra att tänka på.
 
 1. Prova att validera dina webbsidor och använd lintern ofta, så slipper du en massa fel i slutet.
 
-1. Gör många och små commits i ditt git repo, du kan ha ungefär 10-20 commits för en sådan här uppgift. 
+1. Gör många och små commits i ditt git repo, du kan ha ungefär 10-20 commits för en sådan här uppgift.
