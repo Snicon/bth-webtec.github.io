@@ -444,7 +444,7 @@ Nedan kommer en övning där du få på egen hand träna på några av de komman
 <Steps>
 1. Börja med att ladda ned zip-filen från [dbwebb.bth.se/unix-ovning](https://dbwebb.bth.se/unix-ovning).
 
-2. Packa upp filerna i din WSl installation, förslagsvis i hemmakatalog och i en katalog med namnet 'unix-ovning'. Om du vill göra det från terminalen kan först flytta zip-filen till din hemmakatalog i WSL, till exempel:
+2. Packa upp filerna i din WSL installation, förslagsvis i hemmakatalog och i en katalog med namnet 'unix-ovning'. Om du vill göra det från terminalen kan först flytta zip-filen till din hemmakatalog i WSL, till exempel:
 
     ```console title="Flytta övningsfilerna"
     cd $HOME
@@ -457,6 +457,10 @@ Nedan kommer en övning där du få på egen hand träna på några av de komman
     ```console title="Packa upp zip-filen till en katalog"
     unzip unix-ovning.zip -d unix-ovning
     ```
+
+    Om du inte har kommandot `unzip` installerat kommer det dyka upp en uppmaning att installera det. Du kan installera det med `sudo apt install unzip`.
+
+
 4. Nu har du katalogerna och filerna i en katalog som heter `unix-ovning` i din hemmakatalog.
     ```console title="Flytta dig in i katalogen"
     cd unix-ovning
