@@ -40,13 +40,13 @@ src/
     kmom06/
     kmom10/
     laromaterial/         # Kursrepo-inlämning, övrigt stödmaterial
-    studieguide/          # AI, deadline, dialog, fusk, redovisning, PR-instruktioner
-    ovrigt/               # Övrigt
+    studieguide/          # AI, deadline, dialog, fusk, redovisning, PR-instruktioner,
+                          # terminalen, klona repo, kursversioner
 ```
 
 Varje kmom-katalog innehåller kursmomentet (index.mdx) och allt tillhörande material (föreläsningar, övningar, uppgift, lab) direkt under samma katalog eller i underkataloger.
 
-Sidopanelens struktur konfigureras i `astro.config.mjs`. Kmom-sektioner använder manuella `items`-listor (inte autogenerate) för att styra ordning och gruppering av övningsunderkataloger.
+Sidopanelens struktur konfigureras i `astro.config.mjs`. Kmom-sektioner använder manuella `items`-listor (inte autogenerate) för att styra ordning och gruppering av övningsunderkataloger. Övriga sektioner (t.ex. Studieguide) använder `autogenerate` och styr inbördes ordning via `sidebar.order` i varje sidas frontmatter. Den tidigare egna sidopanelskategorin Övrigt (terminalen, klona repo, kursversioner) slogs 2026-09-01 ihop med Studieguide och ligger sist där (`sidebar.order` 9100+, efter `fusk.md` som har 9000).
 
 ## Kursstruktur
 
