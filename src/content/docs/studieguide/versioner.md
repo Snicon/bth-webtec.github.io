@@ -1,6 +1,8 @@
 ---
 title: Versioner av kursen
 description: Historiska versioner av kurs och kursmaterial.
+sidebar:
+    order: 9300
 ---
 
 Om du påbörjat den äldre version av kursen så skall du också slutföra denna versionen av kursen eller göra om den nya kursen från start. Alternativt rådgör du med den som är kursansvarig.

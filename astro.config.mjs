@@ -165,12 +165,7 @@ export default defineConfig({
 					collapsed: true,
 					items: [{ autogenerate: { "directory": "studieguide" } }]
 				},
-				{
-					label: 'Övrigt',
-					collapsed: true,
-					items: [{ autogenerate: { "directory": "ovrigt" } }]
-				},
-				// { 
+				// {
 				// 	label: 'Kursrepo utvecklingsmiljö',
 				// 	collapsed: true,
 				// 	//autogenerate: { directory: 'laromaterial/kursrepo-utvecklingsmiljo' },
